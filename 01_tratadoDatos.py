@@ -1,3 +1,26 @@
+'''
+    File name: 01_tratadoDatos.py
+    Author: Juan Andres Corrochano
+    Date created: 15/04/2019
+    Date last modified: 17/04/2019
+    Python Version: 3.6
+    Description: En este programa se leen los datos de los ficheros en crudo, los cuales deben estar
+    		 en el siguiente formato:
+    		 
+    			-  EMT_tiempos_espera.txt: 
+    				PARADA ID HORA TEsperaReal TEsperaEstimado DiferenciaTEspera
+    				
+    			-  EMT_coordenadas_paradas.txt: 
+    				PARADA COORDENADA_X COORDENADA_Y NOMBRE 
+    				(*)Las coordenadas deben estar en el sistema de coordenadas en ED50
+    				   UTM huso horario 30.	
+		 
+		 El script obtiene la media de las diferencias en los tiempos de espera para cada 
+		 parada y selecciona las 20 con las medias más altas. Después hace un match con sus
+		 coordenadas y pasa esas coordenadas a latitud y longitud, escribiendolas en el 
+		 fichero "top20Coordenadas.txt"
+'''
+
 # --------------------------------------------------------------------------------------------------
 # DEFINES:
 # --------------------------------------------------------------------------------------------------
