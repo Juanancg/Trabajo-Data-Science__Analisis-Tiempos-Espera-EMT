@@ -64,3 +64,5 @@ for each in centroides:
 
 # Save map
 my_map.save("./gpx.html")
+
+print("Finish!")

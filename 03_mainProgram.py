@@ -52,7 +52,7 @@ def print_results(centroids, num_cluster_points):
             print ('\tCluster %d' % (i + 1))
             print ('\t\tNumber Points in Cluster %d' % num_cluster_points.count(i))
             print ('\t\tCentroid: %s' % str(centroids[i]))
-            f.write(str(centroids[i]) + '\n')
+            f.write(str(centroids[i][0])+ "::" + str(centroids[i][1])+'\n')
 
 
 def plot_results(centroids, num_cluster_points, points):
